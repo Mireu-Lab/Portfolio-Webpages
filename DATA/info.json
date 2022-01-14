@@ -1,0 +1,40 @@
+{
+    "name" : "Mireu Lim",
+    "email" : "alfmalfm1214@gmail.com",
+    
+    "github-url" : "https://github.com/Mireu-Labcon",
+    "twitter_url": "https://twitter.com/Mireudev",
+    "discord_url" : "https://discord.gg/TRK7cTA9SE",
+    
+    "see_more_text" : "More on Github",
+
+    "title_text" : "I'm Mireu, a developer who wants to make inconvenience creative and convenient.",
+
+    "about_info_text":{
+        "1" : "Hello :) I'm Mireu, a student developer who wants to change uncomfortable things creatively!",
+        "2" : "We are working on the project using Python and GoLang.",
+        "3" : "Currently, I am interested in AI, so I am preparing projects and papers on the theme of AI."
+    },
+
+    "projects" : {
+    
+        "dply":{
+            "info_text" : "It is a program that allows you to deploy docker containers and view the status of containers on the web.",
+            "lang":"python"
+        },
+    
+        "frontera":{
+            "info_text" : "It is a library that simplifies repetitive tasks in web development.",
+            "lang" : "python"
+        },
+    
+        "yuna":{
+            "info_text" : "It is an NLP artificial intelligence API that allows you to understand users' emotions and talk to them.",
+            "lang" : "python"
+        }
+    },
+
+    "Career" : {
+        "team" : "- DPLY APP Early Backend Developer\n-YUNA Backend Development"
+    }
+}
