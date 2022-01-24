@@ -10,8 +10,6 @@ user_data = json.load(userinfo)
 user_name = user_data["name"]
 email = user_data["email"]
 github_url = user_data["github-url"]
-twitter_url=user_data["twitter_url"]
-discord_url=user_data["discord_url"]
 
 text = """
 ------------------------------\n
@@ -26,28 +24,29 @@ print(text)
 def main_pages():
     if request.method == "GET":
         return render_template("index.html", 
-            lang="US",
             email=email,
              
             github_url=github_url, 
-            twitter_url=twitter_url,
-            discord_url=discord_url,
-                               
-            title_text=user_data["title_text"],
-            see_more_text=user_data["see_more_text"],
             
-            about_text_1=user_data["about_info_text"]["1"],
-            about_text_2=user_data["about_info_text"]["2"],
-            about_text_3=user_data["about_info_text"]["3"],
-
             dply_lang=user_data["projects"]["dply"]["lang"], 
             dply_info=user_data["projects"]["dply"]["info_text"], 
+            dply_github=user_data["projects"]["dply"]["github"],
 
             frontera_lang=user_data["projects"]["frontera"]["lang"], 
             frontera_info=user_data["projects"]["frontera"]["info_text"], 
-            
+            frontera_github=user_data["projects"]["frontera"]["github"],
+
             yuna_lang=user_data["projects"]["yuna"]["lang"], 
             yuna_info=user_data["projects"]["yuna"]["info_text"], 
+            yuna_github=user_data["projects"]["yuna"]["github"],
+
+            hana_lang=user_data["projects"]["hana"]["lang"],
+            hana_info=user_data["projects"]["hana"]["info_text"],
+            hana_github=user_data["projects"]["hana"]["github"],
+
+            mina_lang=user_data["projects"]["mina"]["lang"],
+            mina_info=user_data["projects"]["mina"]["info_text"],
+            mina_github=user_data["projects"]["mina"]["github"],
 
             team_list=user_data["Career"]["team"],
         )

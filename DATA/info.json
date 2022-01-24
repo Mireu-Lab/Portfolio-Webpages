@@ -3,35 +3,39 @@
     "email" : "alfmalfm1214@gmail.com",
     
     "github-url" : "https://github.com/Mireu-Lab",
-    "twitter_url": "https://twitter.com/Mireudev",
-    "discord_url" : "https://discord.gg/TRK7cTA9SE",
     
-    "see_more_text" : "More on Github",
-
-    "title_text" : "I'm Mireu, a developer who wants to make inconvenience creative and convenient.",
-
-    "about_info_text":{
-        "1" : "Hello :) I'm Mireu, a student developer who wants to change uncomfortable things creatively!",
-        "2" : "We are working on the project using Python and GoLang.",
-        "3" : "Currently, I am interested in AI, so I am preparing projects and papers on the theme of AI."
-    },
-
     "projects" : {
     
         "dply":{
             "info_text" : "It is a program that allows you to deploy docker containers and view the status of containers on the web.",
+            "github" : "https://github.com/mireu-lab/DPLY-Program",
             "lang":"python"
         },
     
         "frontera":{
             "info_text" : "It is a library that simplifies repetitive tasks in web development.",
+            "github" : "https://github.com/mireu-lab/Frontera",
             "lang" : "python"
         },
     
         "yuna":{
             "info_text" : "It is an NLP artificial intelligence API that allows you to understand users' emotions and talk to them.",
+            "github" : "https://github.com/mireu-lab/Automatic-response-chatbot",
+            "lang" : "python"
+        },
+
+        "hana" : {
+            "info_text" : "It's an API designed to simplify waste classification.",
+            "github" : "https://github.com/mireu-lab/Garbage-Sorting-Program",
+            "lang" : "python"
+        },
+
+        "mina" : {
+            "info_text" : "It is an API created for the purpose of checking swear words.",
+            "github" : "https://github.com/mireu-lab/Swear-Filter-Program",
             "lang" : "python"
         }
+
     },
 
     "Career" : {

@@ -3,12 +3,12 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	
-	<meta name="description" content="{{title_text}}" />
-	<meta name="author" content="Mireu Lim Portfolio WebPages / {{lang}} Pages" /> 
+	<meta name="description" content="I'm Mireu, a developer who wants to make inconvenience creative and convenient." />
+	<meta name="author" content="Mireu Lim Portfolio WebPages" /> 
 	
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="Mireu Lim Portfolio WebPages / {{lang}} Pages" >
-	<meta property="og:description" content="{{title_text}}">
+	<meta property="og:title" content="Mireu Lim Portfolio WebPages" >
+	<meta property="og:description" content="I'm Mireu, a developer who wants to make inconvenience creative and convenient.">
 
     <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.css') }}" />
 	<script src="https://kit.fontawesome.com/5a354dca55.js" crossorigin="anonymous"></script>
@@ -22,7 +22,7 @@
 		</div>
 		
         <div class="text">
-			<h1 class="name">Mireu Lim</h1>
+			<h1 class="name">Lim Mireu</h1>
 			<h4 class="copyright">| 
 				<a href="mailto:{{email}}">Email</a>  | 
 				<a href="{{github_url}}">GitHub</a> |
@@ -54,9 +54,9 @@
 						<header class="major">
 							<h2>About me</h2>
 						</header>
-						<p>{{about_text_1}}</p>
-						<p>{{about_text_2}}</p>
-						<p>{{about_text_3}}</p>
+						<p>Hello :) I'm Mireu, a student developer who wants to change uncomfortable things creatively!</p>
+						<p>We are working on the project using Python and GoLang.</p>
+						<p>Currently, I am interested in AI, so I am preparing projects and papers on the theme of AI.</p>
 					</div>
 					<span class="image">
 						<img src="{{ url_for('static', filename='assets/images/icon_new.png') }}" alt="">
@@ -119,6 +119,11 @@
 							<i class="fab fa-{{dply_lang}} fa-4x" style="color: #3776AB; margin-top: 20px;"></i>
 							<h3 class="project-name">Dply App</h3>
 							<h4 class="project-detail">{{dply_info}}</h4>
+							<div>
+								<a href="{{dply_github}}">
+									<i class="fab fa-github fa-2x" style="margin-bottom: 20px; margin-top: 9px;" aria-hidden="true"></i>
+								</a>
+							</div>
 						</div>
 					</li>
 					<li>
@@ -126,6 +131,11 @@
 							<i class="fab fa-{{frontera_lang}} fa-4x" style="color: #3776AB; margin-top: 20px;"></i>
 							<h3 class="project-name">Frontera</h3>
 							<h4 class="project-detail">{{frontera_info}}</h4>
+							<div>
+								<a href="{{frontera_github}}">
+									<i class="fab fa-github fa-2x" style="margin-bottom: 20px; margin-top: 9px;" aria-hidden="true"></i>
+								</a>
+							</div>
 						</div>
 					</li>
 					<li>
@@ -133,12 +143,48 @@
 							<i class="fab fa-{{yuna_lang}} fa-4x" style="color: #3776AB; margin-top: 20px;"></i>
 							<h3 class="project-name">Yuna</h3>
 							<h4 class="project-detail">{{yuna_info}}</h4>
+							<div>
+								<a href="{{yuna_github}}">
+									<i class="fab fa-github fa-2x" style="margin-bottom: 20px; margin-top: 9px;" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</li>
+					<!-- <li>
+						<div class="card">
+							<i class="fab fa-{{diary_lang}} fa-4x" style="color: #3776AB; margin-top: 20px;"></i>
+							<h3 class="project-name">Diary</h3>
+							<h4 class="project-detail">{{diary_info}}</h4>
+						</div>
+					</li> -->
+					<li>
+						<div class="card">
+							<i class="fab fa-{{hana_lang}} fa-4x" style="color: #3776AB; margin-top: 20px;"></i>
+							<h3 class="project-name">Hana</h3>
+							<h4 class="project-detail">{{hana_info}}</h4>
+							<div>
+								<a href="{{hana_github}}">
+									<i class="fab fa-github fa-2x" style="margin-bottom: 20px; margin-top: 9px;" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="card">
+							<i class="fab fa-{{mina_lang}} fa-4x" style="color: #3776AB; margin-top: 20px;"></i>
+							<h3 class="project-name">Mina</h3>
+							<h4 class="project-detail">{{mina_info}}</h4>
+							<div>
+								<a href="{{mina_github}}">
+									<i class="fab fa-github fa-2x" style="margin-bottom: 20px; margin-top: 9px;" aria-hidden="true"></i>
+								</a>
+							</div>
 						</div>
 					</li>
 				</ul>
 				<footer class="major">
 					<ul class="actions special">
-						<li><a href="{{github_url}}" class="button">{{see_more_text}}</a></li>
+						<li><a href="{{github_url}}" class="button">More on Github</a></li>
 					</ul>
 				</footer>
 			</section>
