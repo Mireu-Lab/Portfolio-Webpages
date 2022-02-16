@@ -4,41 +4,123 @@
     
     "github-url" : "https://github.com/Mireu-Lab",
     
+    "langs" : {
+
+        "fab fa-python fa-5x":{
+            "color" : "#3776AB",
+            "name" : "Python",
+            "framework" : [
+            "TensorFlow",
+            "FastApi",
+            "Flask"
+            ]
+        },
+
+        "fab fa-js fa-5x":{
+            "color" : "#f0db4f",
+            "name" : "JavaScript",
+            "framework" : [
+                "React"
+            ]
+        },
+
+        "fab fa-golang fa-5x":{
+            "color" : "#29BEB0",
+            "name" : "Go",
+            "framework" : [
+                
+            ]
+        },
+
+        "fas fa-database  fa-5x":{
+            "color" : "#003B57",
+            "name" : "database",
+            "framework" : [
+                "MySQL",
+                "MongoDB"
+            ]
+        },
+
+        "fas fa-server fa-5x":{
+            "color" : "#A22846",
+            "name" : "Server",
+            "framework" : [
+                "Ubuntu",
+                "Docker"
+            ]
+        },
+
+        "fab fa-git-square fa-5x":{
+            "color" : "#F05032",
+            "name" : "Git",
+            "framework":[
+                "GitHub",
+                "GitLab"
+            ]
+        },
+
+        "fas fa-file-video fa-5x":{
+            "color" : "#001722",
+            "name" : "Video Editor",
+            "framework":[
+                "DaVinci Resolve",
+                "Adobe Premiere Pro"
+            ]
+        }
+    },
+
     "projects" : {
     
         "dply":{
             "info_text" : "It is a program that allows you to deploy docker containers and view the status of containers on the web.",
             "github" : "https://github.com/mireu-lab/DPLY-Program",
-            "lang":"python"
+            "lang" : "python",
+            "color" : "#3776AB"
         },
     
         "frontera":{
             "info_text" : "It is a library that simplifies repetitive tasks in web development.",
             "github" : "https://github.com/mireu-lab/Frontera",
-            "lang" : "python"
+            "lang" : "python",
+            "color" : "#3776AB"
         },
     
         "yuna":{
             "info_text" : "It is an NLP artificial intelligence API that allows you to understand users' emotions and talk to them.",
             "github" : "https://github.com/mireu-lab/Automatic-response-chatbot",
-            "lang" : "python"
+            "lang" : "python",
+            "color" : "#3776AB"
         },
 
         "hana" : {
             "info_text" : "It's an API designed to simplify waste classification.",
             "github" : "https://github.com/mireu-lab/Garbage-Sorting-Program",
-            "lang" : "python"
+            "lang" : "python",
+            "color" : "#3776AB"
         },
 
         "mina" : {
             "info_text" : "It is an API created for the purpose of checking swear words.",
             "github" : "https://github.com/mireu-lab/Swear-Filter-Program",
-            "lang" : "python"
+            "lang" : "python",
+            "color" : "#3776AB"
         }
 
     },
 
     "Career" : {
-        "team" : "- DPLY APP Early Backend Developer\n-YUNA Backend Development"
+
+        "Team" : [
+            "- DPLY APP Early Backend Developer",
+            "- Frontera Backend Development"
+        ],
+
+        "Certificate" : [
+            
+        ],
+        
+        "Contest" : [
+
+        ]
     }
 }

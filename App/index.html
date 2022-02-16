@@ -70,44 +70,15 @@
 					<h2>Skill</h2>
 				</header>
 				<ul class="features">
+				{% for lang in langs.items() %}
 					<li>
-						<i class="fab fa-python fa-5x" style="color: #3776AB;"></i>
-						<h3 class='skill-name'>Python</h3>
-						<h4 class="skill-detail">TensorFlow</h4>
-						<h4 class="skill-detail">FastApi</h4>
-						<h4 class="skill-detail">Flask</h4>
+						<i class="{{lang[0]}}" style="color: {{lang[1]['color']}};"></i>
+						<h3 class='skill-name'>{{lang[1]['name']}}</h3>
+						{% for framework in lang[1]['framework'] %}
+						<h4 class="skill-detail">{{framework}}</h4>
+						{%endfor%}
 					</li>
-					<li>
-						<i class="fab fa-golang fa-5x" style="color: #29BEB0;"></i>
-						<h3 class='skill-name'>GoLang</h3>
-					</li>
-					<li>
-						<i class="fab fa-golang fa-5x" style="color: #29BEB0;"></i>
-						<h3 class='skill-name'>GoLang</h3>
-					</li>
-					<li>
-						<i class="fas fa-database fa-5x" style="color: #003B57;"></i>
-						<h3 class='skill-name'>Database</h3>
-						<h4 class="skill-detail">MySQL</h4>
-						<h4 class="skill-detail">MongoDB</h4>
-					</li>
-					<li>
-						<i class="fas fa-server fa-5x" style="color: #A22846;"></i>
-						<h3 class='skill-name'>Server</h3>
-						<h4 class="skill-detail">Ubuntu</h4>
-						<h4 class="skill-detail">Docker</h4>
-					</li>
-					<li>
-						<i class="fab fa-git-square fa-5x" style="color: #F05032;"></i>
-						<h3 class='skill-name'>Git</h3>
-						<h4 class="skill-detail"><a href="{{github_url}}">GitHub</a></h4>
-					</li>
-					<li>
-						<i class="fas fa-file-video fa-5x" style="color: #001722;"></i>
-						<h3 class='skill-name'>Video Editor</h3>
-						<h4 class="skill-detail">DaVinci Resolve</h4>
-						<h4 class="skill-detail">Adobe Premiere Pro</h4>
-					</li>
+				{%endfor%}
 				</ul>
 			</section>
 
@@ -118,73 +89,20 @@
 				</header>
 				<!-- <pre class="project_info"></pre> -->
 				<ul class="features">
+					{% for name in projects.items() %}
 					<li>
 						<div class="card">
-							<i class="fab fa-{{dply_lang}} fa-4x" style="color: #3776AB; margin-top: 20px;"></i>
-							<h3 class="project-name">Dply App</h3>
-							<h4 class="project-detail">{{dply_info}}</h4>
+							<i class="fab fa-{{name[1]['lang']}} fa-4x" style="color: {{name[1]['color']}}; margin-top: 20px;"></i>
+							<h3 class="project-name">{{name[0]}}</h3>
+							<h4 class="project-detail">{{name[1]['info_text']}}</h4>
 							<div>
-								<a href="{{dply_github}}">
+								<a href="{{name[1]['github']}}">
 									<i class="fab fa-github fa-2x" style="margin-bottom: 20px; margin-top: 9px;" aria-hidden="true"></i>
 								</a>
 							</div>
 						</div>
 					</li>
-					<li>
-						<div class="card">
-							<i class="fab fa-{{frontera_lang}} fa-4x" style="color: #3776AB; margin-top: 20px;"></i>
-							<h3 class="project-name">Frontera</h3>
-							<h4 class="project-detail">{{frontera_info}}</h4>
-							<div>
-								<a href="{{frontera_github}}">
-									<i class="fab fa-github fa-2x" style="margin-bottom: 20px; margin-top: 9px;" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="card">
-							<i class="fab fa-{{yuna_lang}} fa-4x" style="color: #3776AB; margin-top: 20px;"></i>
-							<h3 class="project-name">Yuna</h3>
-							<h4 class="project-detail">{{yuna_info}}</h4>
-							<div>
-								<a href="{{yuna_github}}">
-									<i class="fab fa-github fa-2x" style="margin-bottom: 20px; margin-top: 9px;" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-					</li>
-					<!-- <li>
-						<div class="card">
-							<i class="fab fa-{{diary_lang}} fa-4x" style="color: #3776AB; margin-top: 20px;"></i>
-							<h3 class="project-name">Diary</h3>
-							<h4 class="project-detail">{{diary_info}}</h4>
-						</div>
-					</li> -->
-					<li>
-						<div class="card">
-							<i class="fab fa-{{hana_lang}} fa-4x" style="color: #3776AB; margin-top: 20px;"></i>
-							<h3 class="project-name">Hana</h3>
-							<h4 class="project-detail">{{hana_info}}</h4>
-							<div>
-								<a href="{{hana_github}}">
-									<i class="fab fa-github fa-2x" style="margin-bottom: 20px; margin-top: 9px;" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="card">
-							<i class="fab fa-{{mina_lang}} fa-4x" style="color: #3776AB; margin-top: 20px;"></i>
-							<h3 class="project-name">Mina</h3>
-							<h4 class="project-detail">{{mina_info}}</h4>
-							<div>
-								<a href="{{mina_github}}">
-									<i class="fab fa-github fa-2x" style="margin-bottom: 20px; margin-top: 9px;" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-					</li>
+				{%endfor%}
 				</ul>
 				<footer class="major">
 					<ul class="actions special">
@@ -201,28 +119,14 @@
 						<header class="major">
 							<h2>Career</h2>
 						</header>
+						{% for career in career.items() %}
 						<div>
-							<h3>Team</h3>
-							<p><pre>{{team_list}}</pre></p>
+							<h3>{{career[0]}}</h3>
+							{% for career in career[1] %}
+							<p><pre>{{career}}</pre></p>
+							{%endfor%}
 						</div>
-						
-						<!-- <div>
-							<h3>Certificate</h3>
-							<p>{{certificate_list}}</p>
-							<br>
-						</div>
-						
-						<div>
-							<h3>Contest</h3>
-							<p>{{contest_list}}</p>
-							<br>
-						</div>
-						
-						<div>
-							<h3>Thesis</h3>
-							<p>{{thesis_list}}</p>
-							<br>
-						</div> -->
+						{%endfor%}
 					</div>
 				</div>
 			</section>
@@ -233,11 +137,9 @@
 					<h2>Contact</h2>
 				</header>
 				<p>Email : <a href="mailto:{{email}}" target="_top">{{email}}</a></p>
-                <p>Discord : <a href="{{discord_url}}" target="_top">{{discord_url}}</a></p>
-				<p>Twitter : <a href="{{twitter_url}}" target="_top">{{twitter_url}}</a></p>
 				</br></br>
 				<h4 class="copyright">
-					<a href="{{github_url}}/mireu/portfolio-webpages">Copyrightⓒ2022 by Mireu Lim</a>
+					<a href="{{github_url}}/portfolio-webpages">Copyrightⓒ2022 by Mireu Lim</a>
 				</h4>
 			</section>
 		</div>
