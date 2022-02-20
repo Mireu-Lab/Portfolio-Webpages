@@ -40,4 +40,4 @@ def main_pages():
         return "Incorrect connection method"
 
 if __name__ == "__main__":
-    service.run(host="0.0.0.0", port="12347", debug=True)
+    service.run(host="0.0.0.0", port="1234", debug=True)
