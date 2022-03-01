@@ -1,7 +1,6 @@
 FROM python:3
 
-RUN pip3 install flask geoip2
-
+RUN pip3 install flask
 RUN mkdir project
 WORKDIR project
 
