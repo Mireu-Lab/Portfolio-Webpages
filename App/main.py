@@ -3,22 +3,19 @@ import json
 
 service = Flask(__name__)
 
-userinfo = open("./DATA/info.json","r",encoding="utf-8")
-user_data = json.load(userinfo)
+with open("./DATA/info.json","r",encoding="utf-8") as userinfo:
+    user_data = json.load(userinfo)
 
-user_name = user_data["name"]
-email = user_data["email"]
-github_url = user_data["github-url"]
+user_info = user_data["user_info"]
 projects = user_data['projects']
 langs = user_data['langs']
 career = user_data['Career']
 
-text = """
+text = f"""
 ------------------------------\n
-1. User Name : {}\n
-2. GitHub URL : {}\n
+1. User Name : {user_info["name"]} \n
 ------------------------------
-""".format(user_data["name"], user_data["github-url"])
+"""
 
 print(text)
     
@@ -26,13 +23,9 @@ print(text)
 def main_pages():
     if request.method == "GET":
         return render_template("index.html", 
-            email=email,
-             
-            github_url=github_url, 
-
+            user_info = user_info,
             langs = langs,
             projects = projects,
-
             career=career
         )
     else:

@@ -1,18 +1,36 @@
 {
-    "name" : "Mireu Lim",
-    "email" : "alfmalfm1214@gmail.com",
+    "user_info" : {
+        "name" : "Mireu Lim",
+        "email" : "alfmalfm1214@gmail.com",
+
+        "URL":{
+            "GitHub" : "https://github.com/Mireu-Lab",
+	        "Discord" : "https://discord.gg/jUHHrCr7uB"
+        },
+
+        "about" : [
+            "Hello :) I'm Mireu, a student developer who wants to change uncomfortable things creatively!",
+            "We are working on the project using Python and GoLang.",
+            "Currently, I am interested in AI, so I am preparing projects and papers on the theme of AI."
+        ]
+    },
     
-    "github-url" : "https://github.com/Mireu-Lab",
-    
+    "domain" : [
+        "http://api.mireu.xyz/diary/",
+        "http://api.mireu.xyz/hana/",
+        "http://api.mireu.xyz/mina/"
+    ],
+
     "langs" : {
 
         "fab fa-python fa-5x":{
             "color" : "#3776AB",
             "name" : "Python",
             "framework" : [
-            "TensorFlow",
-            "FastApi",
-            "Flask"
+                "TensorFlow",
+		"PyTorch",
+                "FastApi",
+                "Flask"
             ]
         },
 
@@ -28,7 +46,8 @@
             "color" : "#29BEB0",
             "name" : "Go",
             "framework" : [
-                
+                "Gin",
+                "Echo"
             ]
         },
 
@@ -46,6 +65,7 @@
             "name" : "Server",
             "framework" : [
                 "Ubuntu",
+		        "Fedora",
                 "Docker"
             ]
         },
@@ -71,41 +91,56 @@
 
     "projects" : {
     
-        "dply":{
+        "Dply":{
             "info_text" : "It is a program that allows you to deploy docker containers and view the status of containers on the web.",
-            "github" : "https://github.com/mireu-lab/DPLY-Program",
+            "github" : "https://github.com/Mireu-Lab/Docker-Build-Manager-Program",
+            "lang" : "python",
+            "color" : "#3776AB",
+            "url" : "hosting.mireu.xyz"
+        },
+        
+        "Execpro":{
+            "info_text" : "A testing program created for the purpose of executing a test-written code.",
+            "github" : "https://github.com/Mireu-Lab/Docker-Build-Exec-Program",
             "lang" : "python",
             "color" : "#3776AB"
         },
-    
-        "frontera":{
+        
+        "Frontera":{
             "info_text" : "It is a library that simplifies repetitive tasks in web development.",
-            "github" : "https://github.com/mireu-lab/Frontera",
+            "github" : "https://github.com/Mireu-Lab/Frontera",
             "lang" : "python",
             "color" : "#3776AB"
         },
     
-        "yuna":{
+        "Yuna":{
             "info_text" : "It is an NLP artificial intelligence API that allows you to understand users' emotions and talk to them.",
-            "github" : "https://github.com/mireu-lab/Automatic-response-chatbot",
+            "github" : "https://github.com/Mireu-Lab/Automatic-response-chatbot",
             "lang" : "python",
             "color" : "#3776AB"
         },
 
-        "hana" : {
+        "Hana" : {
             "info_text" : "It's an API designed to simplify waste classification.",
-            "github" : "https://github.com/mireu-lab/Garbage-Sorting-Program",
+            "github" : "https://github.com/Mireu-Lab/Garbage-Sorting-Program",
             "lang" : "python",
             "color" : "#3776AB"
         },
 
-        "mina" : {
+        "Mina" : {
             "info_text" : "It is an API created for the purpose of checking swear words.",
-            "github" : "https://github.com/mireu-lab/Swear-Filter-Program",
+            "github" : "https://github.com/Mireu-Lab/Swear-Filter-Program",
             "lang" : "python",
             "color" : "#3776AB"
-        }
+        },
 
+        "Clock" : {
+            "info_text" : "It's a web page to protect the screen.",
+            "github" : "https://github.com/Mireu-Lab/Clock-Webpages",
+            "lang" : "html5",
+            "color" : "#e34c26",
+            "url" : "clock.mireu.xyz"
+        }
     },
 
     "Career" : {
@@ -115,12 +150,8 @@
             "- Frontera Backend Development"
         ],
 
-        "Certificate" : [
-            
-        ],
-        
         "Contest" : [
-
+            "- Korea Jeju Oncoding Junior Hackathon 2018 Best Award."
         ]
     }
 }

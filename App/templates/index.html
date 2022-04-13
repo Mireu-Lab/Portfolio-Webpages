@@ -22,10 +22,12 @@
 		</div>
 		
         <div class="text">
-			<h1 class="name">Lim Mireu</h1>
+			<h1 class="name">{{user_info["name"]}}</h1>
 			<h4 class="copyright">| 
-				<a href="mailto:{{email}}">Email</a>  | 
-				<a href="{{github_url}}">GitHub</a> |
+				<a href="mailto:{{user_info['email']}}">Email</a>  | 
+				{% for url in user_info["URL"] %}
+					<a href="{{user_info['URL'][url]}}">{{url}}</a> |
+				{%endfor%}
 			</h4>
 		</div>
 	</div>
@@ -54,9 +56,9 @@
 						<header class="major">
 							<h2>About me</h2>
 						</header>
-						<p>Hello :) I'm Mireu, a student developer who wants to change uncomfortable things creatively!</p>
-						<p>We are working on the project using Python and GoLang.</p>
-						<p>Currently, I am interested in AI, so I am preparing projects and papers on the theme of AI.</p>
+						{% for about in user_info["about"] %}
+							<p>{{about}}</p>
+						{%endfor%}
 					</div>
 					<span class="image">
 						<img src="{{ url_for('static', filename='images/icon_new.jpg') }}" alt="">
@@ -99,14 +101,20 @@
 								<a href="{{name[1]['github']}}">
 									<i class="fab fa-github fa-2x" style="margin-bottom: 20px; margin-top: 9px;" aria-hidden="true"></i>
 								</a>
-							</div>
+
+								{% if name[1]['url']%}
+								<a href="https://{{name[1]['url']}}">
+									<i class="fa-solid fa-globe fa-2x" style="margin-bottom: 20px; margin-top: 9px;" aria-hidden="true"></i>
+								</a>
+								{%endif%}
+							</div>						
 						</div>
 					</li>
 				{%endfor%}
 				</ul>
 				<footer class="major">
 					<ul class="actions special">
-						<li><a href="{{github_url}}" class="button">More on Github</a></li>
+						<li><a href="{{user_info['URL']['GitHub']}}" class="button">More on Github</a></li>
 					</ul>
 				</footer>
 			</section>
@@ -136,16 +144,19 @@
 				<header class="major">
 					<h2>Contact</h2>
 				</header>
-				<p>Email : <a href="mailto:{{email}}" target="_top">{{email}}</a></p>
+				<p>Email : <a href="mailto:{{user_info['email']}}" target="_top">{{user_info['email']}}</a></p>
+				{% for url in user_info["URL"] %}
+					<p>{{url}} : <a href="{{user_info['URL'][url]}}" target="_top">{{user_info['URL'][url]}}</a></p>
+				{%endfor%}
 				</br></br>
 				<h4 class="copyright">
-					<a href="{{github_url}}/portfolio-webpages">Copyrightⓒ2022 by Mireu Lim</a>
+					<a href="{{user_info['URL']['GitHub']}}/portfolio-webpages">Copyrightⓒ2022 by Mireu Lim</a>
 				</h4>
 			</section>
 		</div>
 	</div>
+	
 	<!-- Scripts -->
-
 	<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
 	<script src="{{ url_for('static', filename='js/jquery.scrollex.min.js') }}"></script>
 	<script src="{{ url_for('static', filename='js/jquery.scrolly.min.js') }}"></script>
