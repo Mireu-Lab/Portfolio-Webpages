@@ -14,12 +14,6 @@
             "Currently, I am interested in AI, so I am preparing projects and papers on the theme of AI."
         ]
     },
-    
-    "domain" : [
-        "http://api.mireu.xyz/diary/",
-        "http://api.mireu.xyz/hana/",
-        "http://api.mireu.xyz/mina/"
-    ],
 
     "langs" : {
 
@@ -124,7 +118,8 @@
             "info_text" : "It's an API designed to simplify waste classification.",
             "github" : "https://github.com/Mireu-Lab/Garbage-Sorting-Program",
             "lang" : "python",
-            "color" : "#3776AB"
+            "color" : "#3776AB",
+            "url" : "hana.mireu.xyz"
         },
 
         "Mina" : {
