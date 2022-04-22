@@ -97,7 +97,8 @@
             "info_text" : "A testing program created for the purpose of executing a test-written code.",
             "github" : "https://github.com/Mireu-Lab/Docker-Build-Exec-Program",
             "lang" : "python",
-            "color" : "#3776AB"
+            "color" : "#3776AB",
+            "url" : "execpro.mireu.xyz"
         },
         
         "Frontera":{
