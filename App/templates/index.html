@@ -17,8 +17,7 @@
 <body class="is-preload" style="margin:0; padding:0">
 	<div class="wrap" align="middle">
 		<div style="background-color: #000;">
-			<img class="background" src="{{ url_for('static', filename='images/background.png') }}"></img>
-			<!-- <video src="{{ url_for('static', filename='images/main.mp4') }}" style="opacity: 0.5;" autoplay muted loop></video> -->
+			<div class="background" style="background-color: {{user_info['signature_color']}};"></div>
 		</div>
 		
         <div class="text">
@@ -61,7 +60,7 @@
 						{%endfor%}
 					</div>
 					<span class="image">
-						<img src="{{ url_for('static', filename='images/icon_new.jpg') }}" alt="">
+						<img src="{{ url_for('static', filename='images/20220622_100214.png') }}" alt="">
 					</span>
 				</div>
 			</section>

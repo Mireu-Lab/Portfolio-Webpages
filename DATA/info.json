@@ -3,6 +3,8 @@
         "name" : "Mireu Lim",
         "email" : "alfmalfm1214@gmail.com",
 
+        "signature_color" : "#413634",
+        
         "URL":{
             "GitHub" : "https://github.com/Mireu-Lab",
 	        "Discord" : "https://discord.gg/jUHHrCr7uB"
@@ -22,7 +24,6 @@
             "name" : "Python",
             "framework" : [
                 "TensorFlow",
-		"PyTorch",
                 "FastApi",
                 "Flask"
             ]
@@ -32,7 +33,8 @@
             "color" : "#f0db4f",
             "name" : "JavaScript",
             "framework" : [
-                "React"
+                "TypeScript",
+                "Vue.Js"
             ]
         },
 
@@ -50,7 +52,8 @@
             "name" : "database",
             "framework" : [
                 "MySQL",
-                "MongoDB"
+                "MongoDB",
+                "FireBase"
             ]
         },
 
@@ -59,7 +62,7 @@
             "name" : "Server",
             "framework" : [
                 "Ubuntu",
-		        "Fedora",
+                "Fedora",
                 "Docker"
             ]
         },
@@ -69,7 +72,8 @@
             "name" : "Git",
             "framework":[
                 "GitHub",
-                "GitLab"
+                "GitLab",
+		        "BitBucket"
             ]
         },
 
