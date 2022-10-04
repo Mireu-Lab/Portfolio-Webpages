@@ -110,10 +110,14 @@
 	],
 	    
         "Contest" : [
-            "- [2018.12 Jeju Office of Education] Jeju On-Coding Junior Hackathon",
+	    "- [2018.12 Jeju Office of Education] Jeju On-Coding Junior Hackathon",
 	    "- [2022.7 Jeju Provincial Office] Jeju Public Data Utilization Startup Contest",
 	    "- [2022.7 Jeju National University] Software Talent Nurturing Hackathon"
-        ]
-
+        ],
+	
+	"Academy" : [
+	    "- [2021.12 Korean Society of Information Sciences] Design and implementation of real-time indoor environmental monitoring system",
+	    "- [2022.06 Korean Society of Information Sciences] A Study on Garbage Sorting Device Using CNN Classification Program"
+	]
     }
 }
