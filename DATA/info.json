@@ -95,63 +95,25 @@
             "lang" : "python",
             "color" : "#3776AB",
             "url" : "hosting.mireu.xyz"
-        },
-        
-        "Execpro":{
-            "info_text" : "A testing program created for the purpose of executing a test-written code.",
-            "github" : "https://github.com/Mireu-Lab/Docker-Build-Exec-Program",
-            "lang" : "python",
-            "color" : "#3776AB",
-            "url" : "execpro.mireu.xyz"
-        },
-        
-        "Frontera":{
-            "info_text" : "It is a library that simplifies repetitive tasks in web development.",
-            "github" : "https://github.com/Mireu-Lab/Frontera",
-            "lang" : "python",
-            "color" : "#3776AB"
-        },
-    
-        "Yuna":{
-            "info_text" : "It is an NLP artificial intelligence API that allows you to understand users' emotions and talk to them.",
-            "github" : "https://github.com/Mireu-Lab/Automatic-response-chatbot",
-            "lang" : "python",
-            "color" : "#3776AB"
-        },
-
-        "Hana" : {
-            "info_text" : "It's an API designed to simplify waste classification.",
-            "github" : "https://github.com/Mireu-Lab/Garbage-Sorting-Program",
-            "lang" : "python",
-            "color" : "#3776AB",
-            "url" : "hana.mireu.xyz"
-        },
-
-        "Mina" : {
-            "info_text" : "It is an API created for the purpose of checking swear words.",
-            "github" : "https://github.com/Mireu-Lab/Swear-Filter-Program",
-            "lang" : "python",
-            "color" : "#3776AB"
-        },
-
-        "Clock" : {
-            "info_text" : "It's a web page to protect the screen.",
-            "github" : "https://github.com/Mireu-Lab/Clock-Webpages",
-            "lang" : "html5",
-            "color" : "#e34c26",
-            "url" : "clock.mireu.xyz"
         }
     },
 
     "Career" : {
 
         "Team" : [
-            "- DPLY APP Early Backend Developer",
-            "- Frontera Backend Development"
+            "- [2020.3 ~ 2021.6 ] Dply App Docker backend, front developer",
+            "- [2022.1 ~ ] PSriot Docker backend system developer",
+	    "- [2022.6 ~ ] Founder of None Labs, Ecocycling service development and planner"
         ],
-
+	"Qualification" : [
+	    "- [2022.2 Korea Transportation Safety Authority] Korea's ultra-light unmanned aerial vehicle class 4"
+	],
+	    
         "Contest" : [
-            "- Korea Jeju Oncoding Junior Hackathon 2018 Best Award."
+            "- [2018.12 Jeju Office of Education] Jeju On-Coding Junior Hackathon",
+	    "- [2022.7 Jeju Provincial Office] Jeju Public Data Utilization Startup Contest",
+	    "- [2022.7 Jeju National University] Software Talent Nurturing Hackathon"
         ]
+
     }
 }
