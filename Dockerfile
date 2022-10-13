@@ -6,4 +6,4 @@ WORKDIR /project
 
 COPY . .
 
-CMD [ "python3", "App/main.py" ]
+CMD [ "python3", "src/main.py" ]
