@@ -1,6 +1,5 @@
-# mireu.dev
+# Portfolio Webpages
 
----
 ## 개요
 
 디자인을 거하게 못할것 같아서 어느분이 사용하시길래 한번 제입맛대로 Flask로 한번시도 해봤습니다.
@@ -27,7 +26,7 @@
 실행은 일반 파이썬 실행 하듣이 실행 하시면됩니다.
 
 ```bash
-> python3 App/main.py
+> python3 src/main.py
 
 ------------------------------
 
