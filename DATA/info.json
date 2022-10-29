@@ -101,23 +101,23 @@
     "Career" : {
 
         "Team" : [
-            "- [2020.3 ~ 2021.6 ] Dply App Docker backend, front developer",
-            "- [2022.1 ~ ] PSriot Docker backend system developer",
-	    "- [2022.6 ~ ] Founder of None Labs, Ecocycling service development and planner"
+            "- Dply App Docker backend, front developer",
+            "- PSriot Docker backend system developer",
+	    "- Founder of None Labs, Ecocycling service development and planner"
         ],
 	"Qualification" : [
-	    "- [2022.2 Korea Transportation Safety Authority] Korea's ultra-light unmanned aerial vehicle class 4"
+	    "- Korea's ultra-light unmanned aerial vehicle class 4"
 	],
 	    
         "Contest" : [
-	    "- [2018.12 Jeju Office of Education] Jeju On-Coding Junior Hackathon",
-	    "- [2022.7 Jeju Provincial Office] Jeju Public Data Utilization Startup Contest",
-	    "- [2022.7 Jeju National University] Software Talent Nurturing Hackathon"
+	    "- Jeju On-Coding Junior Hackathon",
+	    "- Jeju Public Data Utilization Startup Contest",
+	    "- Software Talent Nurturing Hackathon"
         ],
 	
 	"Academy" : [
-	    "- [2021.12] Design and implementation of real-time indoor environmental monitoring system",
-	    "- [2022.06] A Study on Garbage Sorting Device Using CNN Classification Program"
+	    "- Design and implementation of real-time indoor environmental monitoring system",
+	    "- A Study on Garbage Sorting Device Using CNN Classification Program"
 	]
     }
 }
