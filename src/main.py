@@ -1,7 +1,5 @@
-from flask import Flask, render_template, request, redirect, url_for
+from page import pages
 import json
-
-service = Flask(__name__)
 
 with open("./DATA/info.json","r",encoding="utf-8") as userinfo:
     user_data = json.load(userinfo)
@@ -18,18 +16,35 @@ text = f"""
 """
 
 print(text)
-    
-@service.route("/")
-def main_pages():
-    if request.method == "GET":
-        return render_template("index.html", 
-            user_info = user_info,
-            langs = langs,
-            projects = projects,
-            career=career
-        )
-    else:
-        return "Incorrect connection method"
 
-if __name__ == "__main__":
-    service.run(host="0.0.0.0", port="80", debug=True)
+
+print(pages.save(
+    pages.description(
+        user_info["page_description"], 
+        user_info["page_author"]
+    ), 
+    pages.titlediv(
+        user_info["signature_color"], 
+        user_info["name"], 
+        user_info["email"], 
+        user_info["URL"]
+    ), 
+    pages.introduction(
+        user_info["about"]
+    ), 
+    pages.firstsection(
+        langs
+    ), 
+    pages.secondsection(
+        projects,
+        user_info["URL"]["GitHub"], 
+    ), 
+    pages.introduction_two(
+        career
+    ), 
+    pages.getstarted(
+        user_info["email"], 
+        user_info["URL"]["GitHub"],
+        user_info["URL"]
+    )
+))

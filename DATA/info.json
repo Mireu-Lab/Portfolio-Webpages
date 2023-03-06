@@ -1,5 +1,8 @@
 {
     "user_info" : {
+        "page_description" : "I'm Mireu, a developer who wants to make inconvenience creative and convenient.",
+        "page_author" : "Mireu Lim Portfolio WebPages",
+
         "name" : "Mireu Lim",
         "email" : "limmireu1214@gmail.com",
 
@@ -103,21 +106,22 @@
         "Team" : [
             "- Dply App Docker backend, front developer",
             "- PSriot Docker backend system developer",
-	    "- Founder of None Labs, Ecocycling service development and planner"
+	        "- Founder of None Labs, Ecocycling service development and planner"
         ],
-	"Qualification" : [
-	    "- Korea's ultra-light unmanned aerial vehicle class 4"
-	],
-	    
+    
+        "Qualification" : [
+                "- Korea's ultra-light unmanned aerial vehicle class 4"
+        ],
+            
         "Contest" : [
-	    "- Jeju On-Coding Junior Hackathon",
-	    "- Jeju Public Data Utilization Startup Contest",
-	    "- Software Talent Nurturing Hackathon"
+            "- Jeju On-Coding Junior Hackathon",
+            "- Jeju Public Data Utilization Startup Contest",
+            "- Software Talent Nurturing Hackathon"
         ],
-	
-	"Academy" : [
-	    "- Design and implementation of real-time indoor environmental monitoring system",
-	    "- A Study on Garbage Sorting Device Using CNN Classification Program"
-	]
+
+        "Academy" : [
+            "- Design and implementation of real-time indoor environmental monitoring system",
+            "- A Study on Garbage Sorting Device Using CNN Classification Program"
+        ]
     }
 }
