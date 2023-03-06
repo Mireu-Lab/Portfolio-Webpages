@@ -59,8 +59,8 @@ class pages:
 
     def firstsection(langs:dict) -> str:
         frameworkhtml = ""
-        langlist = ""
         for lang in langs.items():
+            langlist = ""
             for framework in lang[1]['framework']:
                 frameworkhtml += f"""<h4 class="skill-detail">{framework}</h4>\n"""
             
@@ -88,9 +88,9 @@ class pages:
         
 
     def secondsection(projects:dict, github:str) -> str:
-        urlhtml = ""
         projecthtml = ""
         for name in projects.items():
+            urlhtml = ""
             if name[1]['url']:
                 urlhtml += """
                 <a href="https://{{name[1]['url']}}">
@@ -136,9 +136,9 @@ class pages:
         
 
     def introduction_two(career:dict) -> str:
-        careerhtml = ""
         carrerloadhtml = ""
         for career in career.items():
+            careerhtml = ""
             for career in career[1]:
                 careerhtml += f"""
                     <p><pre>{career}</pre></p>
@@ -225,6 +225,7 @@ class pages:
                         {introduction}
                         {firstsection}
                         {secondsection}
+                        {introduction_two}
                         {getstarted}
                     </div>
                 </div>
