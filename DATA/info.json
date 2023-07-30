@@ -1,91 +1,123 @@
 {
-    "name" : "Mireu Lim",
-    "email" : "alfmalfm1214@gmail.com",
-    
-    "github-url" : "https://github.com/Mireu-Labcon",
-    "twitter_url": "https://twitter.com/Mireudev",
-    "discord_url" : "https://discord.gg/TRK7cTA9SE",
-    
-    "see_more_text":{
-        "ko" : "Github에서 더보기",
-        "en" : "More on Github",
-        "jp" : "Github でもっと見る"
+    "user_info" : {
+        "name" : "Mireu Lim",
+        "email" : "limmireu1214@gmail.com",
+
+        "signature_color" : "#86B1E5",
+        
+        "URL":{
+            "GitHub" : "https://github.com/Mireu-Lab",
+	        "Discord" : "https://discord.gg/BnmPSpuCrj"
+        },
+
+        "about" : [
+            "Hello :) I'm Mireu, a backend / ML developer who wants to change uncomfortable things creatively!",
+            "We are working on the project using Python and GoLang.",
+            "Currently, I am interested in AI, so I am preparing projects and papers on the theme of AI."
+        ]
     },
 
-    "title_text" : {
-        "ko" : "불편을 창의적으로 편리함으로 만들고 싶어하는 개발자 미르입니다",
-        "en" : "I'm Mireu, a developer who wants to make inconvenience creative and convenient.",
-        "jp" : "不便を創意的かつ便利にしたい開発者、Mireuです。"
-    },
+    "langs" : {
 
-    "about_info_text":{
-        "ko" : {
-            "1" : "안녕하세요 :) 불편한것을 창의스럽게 바꾸고 싶어하는 학생개발자, 미르입니다!",
-            "2" : "파이썬, GoLang을 이용해서 프로젝트을 진행중이며.",
-            "3" : "현제 AI에 관심이 많아서 AI을 주제로 한 프로젝트, 논문을 준비중이에요."
+        "fab fa-python fa-5x":{
+            "color" : "#3776AB",
+            "name" : "Python",
+            "framework" : [
+                "TensorFlow",
+                "FastApi",
+                "Flask"
+            ]
         },
-        "en" : {
-            "1" : "Hello :) I'm Mireu, a student developer who wants to change uncomfortable things creatively!",
-            "2" : "We are working on the project using Python and GoLang.",
-            "3" : "Currently, I am interested in AI, so I am preparing projects and papers on the theme of AI."
+
+        "fab fa-js fa-5x":{
+            "color" : "#f0db4f",
+            "name" : "JavaScript",
+            "framework" : [
+                "TypeScript",
+                "Vue.Js"
+            ]
         },
-        "jp" : {
-            "1" : "こんにちは:) 不便なことをクリエイティブに変えたい学生開発者、ミルです！",
-            "2" : "パイソン、GoLangを利用してプロジェクトを進行中です",
-            "3" : "現在AIに関心が高いのでAIをテーマにしたプロジェクト、論文を準備中です。"
+
+        "fab fa-golang fa-5x":{
+            "color" : "#29BEB0",
+            "name" : "Go",
+            "framework" : [
+                "Gin",
+                "Echo"
+            ]
+        },
+
+        "fas fa-database  fa-5x":{
+            "color" : "#003B57",
+            "name" : "database",
+            "framework" : [
+                "MySQL",
+                "MongoDB",
+                "FireBase"
+            ]
+        },
+
+        "fas fa-server fa-5x":{
+            "color" : "#A22846",
+            "name" : "Server",
+            "framework" : [
+                "Ubuntu",
+                "Fedora",
+                "Docker"
+            ]
+        },
+
+        "fab fa-git-square fa-5x":{
+            "color" : "#F05032",
+            "name" : "Git",
+            "framework":[
+                "GitHub",
+                "GitLab",
+		        "BitBucket"
+            ]
+        },
+
+        "fas fa-file-video fa-5x":{
+            "color" : "#001722",
+            "name" : "Video Editor",
+            "framework":[
+                "DaVinci Resolve",
+                "Adobe Premiere Pro"
+            ]
         }
     },
 
     "projects" : {
     
-        "dply":{
-            "info_text":{
-                "ko" : "도커 컨테이너을 배포하고 웹으로 컨테이너의 상태을 볼수있는 프로그램입니다.",
-                "en" : "It is a program that allows you to deploy docker containers and view the status of containers on the web.",
-                "jp" : "これは、Dockerコンテナーを配布しWeb上で コンテナーのステータスを表示できるようにする プログラムです"
-            },
-            "lang":"python"
-        },
-    
-        "frontera":{
-            "info_text":{
-                "ko" : "웹개발에서 반복되는 작업을 단순화 시켜주는 라이브러리 입니다.",
-                "en" : "It is a library that simplifies repetitive tasks in web development.",
-                "jp" : "Web開発で繰り返される作業を 単純化させてくれる ライブラリです。"
-            },
-            "lang" : "python"
-        },
-    
-        "yuna":{
-            "info_text":{
-                "ko" : "사용자의 감정을 이해하고 사용자와 대화할수있는 NLP 인공지능 API입니다.",
-                "en" : "It is an NLP artificial intelligence API that allows you to understand users' emotions and talk to them.",
-                "jp" : "ユーザーの感情を把握し、ユーザーと会話できるNLP人工知能APIです。"
-            },
-            "lang" : "python"
+        "Dply":{
+            "info_text" : "It is a program that allows you to deploy docker containers and view the status of containers on the web.",
+            "github" : "https://github.com/Mireu-Lab/Docker-Build-Manager-Program",
+            "lang" : "python",
+            "color" : "#3776AB",
+            "url" : "hosting.mireu.xyz"
         }
     },
 
     "Career" : {
-        "team" : {
-            "ko" : "- Team Sirius CEO\n- DPLY APP 백엔드 개발자\n- Yuna 백엔드 개발\n- 파이썬, Golang, JS 강좌 제작",
-            "en" : null,
-            "jp" : null
-        },
-        "certificate" : {
-            "ko" : "- 정보처리기능사 필기",
-            "en" : null,
-            "jp" : null
-        },
-        "contest" : {
-            "ko" : "- 2018년 제주 주니어 해커톤 최우수상",
-            "en" : null,
-            "jp" : null
-        },
-        "thesis" : {
-            "ko" : "- 실시간 실내 환경 모니터링 시스템 설계 및 구현 (2021.12.09)",
-            "en" : null,
-            "jp" : null
-        }
+
+        "Team" : [
+            "- Dply App Docker backend, front developer",
+            "- PSriot Docker backend system developer",
+	    "- Founder of None Labs, Ecocycling service development and planner"
+        ],
+	"Qualification" : [
+	    "- Korea's ultra-light unmanned aerial vehicle class 4"
+	],
+	    
+        "Contest" : [
+	    "- Jeju On-Coding Junior Hackathon",
+	    "- Jeju Public Data Utilization Startup Contest",
+	    "- Software Talent Nurturing Hackathon"
+        ],
+	
+	"Academy" : [
+	    "- Design and implementation of real-time indoor environmental monitoring system",
+	    "- A Study on Garbage Sorting Device Using CNN Classification Program"
+	]
     }
 }

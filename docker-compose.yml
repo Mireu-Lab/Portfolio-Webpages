@@ -4,9 +4,19 @@ services:
   web:
     build: .
     restart: always
-    container_name: Portfolio-Container
-    command: python3 App/main.py
-    ports:
-      - '1234:1234'
+    container_name: Mireu-Portfolio-Container
+
   proxy:
-    image: imageName
+    depends_on:
+      - web
+    build: docker
+    # image: nginx:latest
+    restart: always
+    container_name: Mireu-Portfolio-Container-Proxy
+    environment:
+      - VIRTUAL_HOST=www.mireu.xyz
+
+networks:
+  default:
+    external:
+      name: Container_Proxy_Network
