@@ -1,0 +1,75 @@
+html {
+    width: auto;
+    height: auto;
+    background: #FFF;
+}
+
+h1, p {
+    color: #383838;
+    font-family: Ubuntu;
+    text-align: center; 
+    font-style: normal;
+    line-height: normal;
+}
+
+img {
+    width: 316px;
+    height: 316px;
+    border-radius: 92px;
+    object-fit: fill;
+}
+
+#ProfileImg {
+    background: url(https://avatars.githubusercontent.com/u/97509351), lightgray 50% / cover no-repeat;
+    background-size: contain;
+}
+
+.Page {
+    padding-top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: inline-flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 60px;
+}
+
+#Text {
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+}
+
+#Text0 {
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+}
+
+#Text-Title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+#Text-Sub {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+#Text1 {
+    padding-top: 10%;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#Text1 > a {
+    text-decoration: none;
+    color: #383838;
+}
