@@ -1,146 +1,409 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-html {
-    width: auto;
-    height: auto;
-    background: #FFF;
+:root {
+    --bg-color: #FFFFFF;
+    --text-primary: #2D3748;
+    --text-secondary: #4A5568;
+    --text-muted: #718096;
+    --border-color: #E2E8F0;
+    --border-hover: #CBD5E0;
+    --accent-color: #383838;
+    --badge-bg: #F7FAFC;
+    --badge-text: #4A5568;
+    --card-bg: #FFFFFF;
 }
 
-h1, p {
-    color: #383838;
-    font-family: Ubuntu;
-    text-align: center; 
-    font-style: normal;
-    line-height: normal;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-#ProfileImg {
-    object-fit: cover;
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
 }
 
+h1, h2, h3, p {
+    color: var(--text-primary);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Base Layout Container */
 .Page {
-    padding-top: 50px;
-    padding-left: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    display: inline-flex;
-    position: absolute;
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 60px 24px 100px 24px;
+    display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
     gap: 60px;
 }
 
-#Text {
-    width: auto;
-    height: auto;
-    flex-shrink: 0;
+/* ==========================================================================
+   Profile / Hero Section
+   ========================================================================== */
+.Profile-Section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    width: 100%;
 }
 
-#Text0 {
-    width: auto;
-    height: auto;
-    flex-shrink: 0;
+#ProfileImg {
+    border-radius: 50px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+#ProfileImg:hover {
+    transform: scale(1.02);
+}
+
+#Text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+#Text-Title {
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    letter-spacing: -0.02em;
+}
+
+#Text-Sub {
+    font-size: 1.35rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+
+#Text1 {
+    margin-top: 12px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 #Text1 > a {
     text-decoration: none;
-    color: #383838;
+    color: var(--accent-color);
+    transition: color 0.2s ease, opacity 0.2s ease;
 }
 
-@media all and (max-width: 768px){
-	/* //브라우저 창 width가 768px보다 작아지는 순간부터 적용 */
-    /* //모바일 */
+#Text1 > a:hover {
+    opacity: 0.65;
+}
 
-    img {
-        width: 200px;
-        height: 200px;
-        border-radius: 65px;
-        object-fit: cover;
+/* ==========================================================================
+   Projects Section
+   ========================================================================== */
+.Projects-Section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.Section-Header {
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 16px;
+}
+
+.Section-Title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.Section-Desc {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+/* Controls: Filters & Search */
+.Projects-Controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.Category-Filters {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.Filter-Btn {
+    background: var(--badge-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.Filter-Btn:hover {
+    border-color: var(--border-hover);
+    color: var(--text-primary);
+}
+
+.Filter-Btn.active {
+    background: var(--accent-color);
+    color: #FFFFFF;
+    border-color: var(--accent-color);
+}
+
+.Search-Box {
+    flex-grow: 1;
+    max-width: 300px;
+}
+
+.Search-Box input {
+    width: 100%;
+    padding: 8px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.875rem;
+    color: var(--text-primary);
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.Search-Box input:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(56, 56, 56, 0.08);
+}
+
+/* Notice Banner */
+.Sheet-Notice {
+    background-color: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 0.875rem;
+    color: #475569;
+    line-height: 1.5;
+}
+
+.Sheet-Notice code {
+    background-color: #EDF2F7;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+/* Projects Grid & Cards */
+.Projects-Grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 24px;
+}
+
+.Project-Card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.Project-Card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.08);
+    border-color: var(--border-hover);
+}
+
+.Card-Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.Category-Badge {
+    background: var(--badge-bg);
+    color: var(--badge-text);
+    border: 1px solid var(--border-color);
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.Project-Date {
+    font-size: 0.825rem;
+    color: var(--text-muted);
+}
+
+.Project-Title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+    line-height: 1.35;
+}
+
+.Project-Desc {
+    font-size: 0.925rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.Tech-Stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.Tech-Badge {
+    background: #F1F5F9;
+    color: #475569;
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.Card-Footer {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding-top: 14px;
+    border-top: 1px solid #F1F5F9;
+}
+
+.Card-Link {
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 700;
+    transition: color 0.2s ease;
+}
+
+.Primary-Link {
+    color: var(--accent-color);
+}
+
+.Primary-Link:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.Secondary-Link {
+    color: var(--text-muted);
+}
+
+.Secondary-Link:hover {
+    color: var(--text-primary);
+    text-decoration: underline;
+}
+
+/* Empty & Loading States */
+.Empty-State, .Loading-State {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-muted);
+}
+
+.Spinner {
+    width: 32px;
+    height: 32px;
+    border: 3px solid var(--border-color);
+    border-top-color: var(--accent-color);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin: 0 auto 16px auto;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+@media (max-width: 768px) {
+    .Page {
+        padding: 40px 16px 60px 16px;
+        gap: 40px;
     }
-    
+
+    #ProfileImg {
+        width: 180px;
+        height: 180px;
+        border-radius: 40px;
+    }
+
     #Text-Title {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        font-size: 45px;
-        font-weight: 700;
+        font-size: 2.1rem;
     }
-    
+
     #Text-Sub {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        font-size: 25px;
-        font-weight: 400;
+        font-size: 1.1rem;
     }
-    
+
     #Text1 {
-        padding-top: 10%;
-        font-size: 25px;
-        font-weight: 700;
+        font-size: 1rem;
+    }
+
+    .Projects-Grid {
+        grid-template-columns: 1fr;
+    }
+
+    .Projects-Controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .Search-Box {
+        max-width: 100%;
     }
 }
 
-@media all and (min-width: 768px){
-	/* //브라우저 창 width가 768px보다 커지는 순간부터 적용 */
-	/* //태블릿 */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #ProfileImg {
+        width: 220px;
+        height: 220px;
+        border-radius: 45px;
+    }
 
-    img {
-        width: 216px;
-        height: 216px;
-        border-radius: 70px;
-        object-fit: cover;
-    }
-    
     #Text-Title {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        font-size: 75px;
-        font-weight: 700;
-    }
-    
-    #Text-Sub {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        font-size: 35px;
-        font-weight: 400;
-    }
-    
-    #Text1 {
-        padding-top: 10%;
-        font-size: 35px;
-        font-weight: 700;
+        font-size: 2.4rem;
     }
 }
 
-@media all and (min-width: 1024px){
-	/* //브라우저 창 width가 1024px보다 커지는 순간부터 적용 */
-    /* //데스크탑 */
-
-	img {
-        width: 316px;
-        height: 316px;
-        border-radius: 90px;
-        object-fit: cover;
-    }
-
-    #Text-Title {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        font-size: 80px;
-        font-weight: 700;
-    }
-    
-    #Text-Sub {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        font-size: 40px;
-        font-weight: 400;
-    }
-    
-    #Text1 {
-        padding-top: 10%;
-        font-size: 40px;
-        font-weight: 700;
+@media (min-width: 1025px) {
+    #ProfileImg {
+        width: 260px;
+        height: 260px;
+        border-radius: 50px;
     }
 }
