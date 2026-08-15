@@ -15,8 +15,7 @@ h1, p {
 }
 
 #ProfileImg {
-    background: url(https://avatars.githubusercontent.com/u/97509351), lightgray 50% / cover no-repeat;
-    background-size: contain;
+    object-fit: cover;
 }
 
 .Page {
@@ -58,7 +57,7 @@ h1, p {
         width: 200px;
         height: 200px;
         border-radius: 65px;
-        object-fit: fill;
+        object-fit: cover;
     }
     
     #Text-Title {
@@ -90,7 +89,7 @@ h1, p {
         width: 216px;
         height: 216px;
         border-radius: 70px;
-        object-fit: fill;
+        object-fit: cover;
     }
     
     #Text-Title {
@@ -122,7 +121,7 @@ h1, p {
         width: 316px;
         height: 316px;
         border-radius: 90px;
-        object-fit: fill;
+        object-fit: cover;
     }
 
     #Text-Title {
