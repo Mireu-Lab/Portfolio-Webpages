@@ -1,63 +1,32 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mireu Lim - Portfolio</title>
-    <meta name="description" content="Portfolio of Mireu Lim - Backend & ML/DL Engineer. Projects integrated with Google Sheets.">
+    <title>Mireu Lim - Portfolio Page</title>
     
     <link rel="stylesheet" href="style.css">
-    <script src="./index.js" defer></script>
+    <script src="./index.js"></script>
+
 </head>
 <body>  
     <div class="Page">
-        <!-- Hero / Profile Section -->
-        <header class="Profile-Section">
-            <img id="ProfileImg" src="https://avatars.githubusercontent.com/u/97509351" alt="Mireu Lim Profile Image">
+        <img id="ProfileImg" src="https://avatars.githubusercontent.com/u/97509351" alt="Mireu Lim Profile Image">
 
-            <div id="Text">
-                <h1 id="Text-Title">Mireu Lim</h1>
-                <p id="Text-Sub">Backend, ML/DL Engineer</p>    
+        <div id="Text">
+            <h1 id="Text-Title">Mireu Lim</h1>
+            <p id="Text-Sub">Backend, ML/DL Engineer</p>    
 
-                <p id="Text1">
-                    |
-                    <a href="https://scholar.google.com/citations?hl=en&user=l1TMvnIAAAAJ" target="_blank" rel="noopener noreferrer">Scholar</a>
-                    |
-                    <a href="mailto:limmireu1214@gmail.com">Email</a>
-                    |
-                    <a href="https://linkedin.com/in/mireu-lim-528064256" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    |
-                </p>
-            </div>
-        </header>
-
-        <!-- Projects Section -->
-        <main class="Projects-Section">
-            <div class="Section-Header">
-                <h2 class="Section-Title">Projects</h2>
-                <p class="Section-Desc">Google Sheets와 실시간 연동되는 프로젝트 목록입니다.</p>
-            </div>
-
-            <!-- Controls: Category Filters & Search -->
-            <div class="Projects-Controls">
-                <div class="Category-Filters" id="CategoryFilters">
-                    <!-- Filter buttons rendered via JS -->
-                </div>
-                <div class="Search-Box">
-                    <input type="text" id="SearchInput" placeholder="프로젝트명, 기술 스택 검색..." aria-label="Search projects">
-                </div>
-            </div>
-
-            <!-- Google Sheets Config Banner (Shows when using default/mock data) -->
-            <div id="SheetNotice" class="Sheet-Notice" style="display: none;">
-                💡 Google Sheets 연동 안내: <code>index.js</code>의 <code>SPREADSHEET_ID</code> 변수에 구글 시트 ID를 입력하면 자동으로 시트 데이터가 표시됩니다.
-            </div>
-
-            <!-- Projects Grid Container -->
-            <div id="ProjectsGrid" class="Projects-Grid">
-                <!-- Dynamic project cards rendered via JS -->
-            </div>
-        </main>
+            <p id="Text1">
+                |
+                <a href="https://scholar.google.com/citations?hl=en&user=l1TMvnIAAAAJ">Scholar</a>
+                |
+                <a href="mailto:limmireu1214@gmail.com">Email</a>
+                |
+                <a href="https://linkedin.com/in/mireu-lim-528064256">LinkedIn</a>
+                |
+            </p>
+        </div>
     </div>
 </body>
 </html>
